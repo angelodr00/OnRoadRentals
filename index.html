@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnRoadsRentals - Noleggio Auto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header con logo -->
+    <header>
+        <img src="logo.png" alt="OnRoadsRentals Logo" class="logo">
+        <h1>Noleggio Auto su Misura per Te</h1>
+    </header>
+
+    <!-- Sezione Lista Auto -->
+    <section class="car-list">
+        <h2>Le Nostre Auto</h2>
+        <div class="cars">
+            <div class="car">
+                <img src="auto1.jpg" alt="Auto 1">
+                <p>Mercedes Classe A</p>
+            </div>
+            <div class="car">
+                <img src="auto2.jpg" alt="Auto 2">
+                <p>BMW Serie 3</p>
+            </div>
+            <div class="car">
+                <img src="auto3.jpg" alt="Auto 3">
+                <p>Audi Q5</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form di Contatto -->
+    <section class="contact-form">
+        <h2>Richiedi un Preventivo</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="telefono" placeholder="Telefono" required>
+            <select name="auto">
+                <option value="" disabled selected>Seleziona un'auto</option>
+                <option value="mercedes">Mercedes Classe A</option>
+                <option value="bmw">BMW Serie 3</option>
+                <option value="audi">Audi Q5</option>
+            </select>
+            <input type="text" name="durata" placeholder="Durata del noleggio (es. 12 mesi)" required>
+            <textarea name="messaggio" placeholder="Richieste specifiche"></textarea>
+            <button type="submit">Invia Richiesta</button>
+        </form>
+    </section>
+
+    <!-- Pulsanti di Contatto -->
+    <section class="contact-buttons">
+        <a href="https://wa.me/tuonumero" class="whatsapp-btn">Contattaci su WhatsApp</a>
+        <a href="mailto:tuamail@email.com" class="email-btn">Contattaci via Email</a>
+    </section>
+
+</body>
+</html>
