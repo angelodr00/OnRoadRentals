@@ -1,31 +1,29 @@
-/* Resetting some basic styles */
+/* Reset e stili di base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-    background: #333;
+    background-color: #333;
     color: white;
-    padding: 1rem;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
+header .logo img {
+    max-height: 50px;
+    margin-right: 10px;
 }
 
 header nav ul {
@@ -40,21 +38,55 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 600;
 }
 
-/* Sections */
-section {
-    padding: 2rem;
-    text-align: center;
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
-section#home {
-    background: #4CAF50;
+/* Sezione Hero */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-section#cars {
-    background: white;
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Auto Disponibili */
+.cars-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cars-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
 .car-list {
@@ -64,55 +96,90 @@ section#cars {
 }
 
 .car-item {
-    background: #fff;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .car-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+.car-item h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
 }
 
-/* Contact Form */
-#contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.car-item p {
+    margin-bottom: 10px;
 }
 
-#contact input, #contact textarea {
-    width: 80%;
-    padding: 1rem;
+.car-item .cta-button {
+    margin-top: 15px;
+}
+
+/* Form Contatti */
+.contact-section {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ddd;
     border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-#contact button {
-    padding: 1rem 2rem;
-    background: #333;
+textarea {
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
     color: white;
     border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
+    background-color: #333;
     color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer .contact-info a:hover {
+    text-decoration: underline;
 }
