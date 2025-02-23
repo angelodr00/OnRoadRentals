@@ -1,36 +1,32 @@
-# OnRoadRentals - Noleggio Auto a Lungo Termine
+# OnRoad Rentals - Noleggio Auto
 
-Benvenuto nel progetto OnRoadRentals, una soluzione di noleggio auto a lungo termine pensata per offrire alle persone un'esperienza semplice e conveniente. Il sito permette agli utenti di scegliere tra una varietà di auto a noleggio, tutte con condizioni trasparenti e convenienti.
+Benvenuto nel progetto **OnRoad Rentals**, un sito web professionale di noleggio auto. Questo sito ti permette di offrire una vasta gamma di auto in noleggio, raccogliere lead e gestire facilmente le richieste dei clienti. Il sito è progettato per essere semplice da utilizzare e altamente personalizzabile.
 
-## Caratteristiche
-- **Noleggio a lungo termine** senza pensieri.
-- **Semplice interfaccia** per la scelta delle auto.
-- **Contatti facili e veloci** tramite telefono, email o WhatsApp.
-- **Form di contatto personalizzabile** per ogni richiesta specifica.
-- **Gestione delle richieste auto** tramite il nostro sistema di prenotazione.
+## Funzionalità
 
-## Come funziona
-1. **Scegli un'auto**: Naviga nel nostro sito per trovare la macchina che fa per te.
-2. **Personalizza la tua richiesta**: Specifica la durata del noleggio, i chilometri mensili, e altre preferenze.
-3. **Contattaci**: Compila il form per ricevere un preventivo, o scrivici via telefono, email, o WhatsApp.
+- **Home Page accattivante**: Una sezione hero che attira l'attenzione con un design pulito e moderno.
+- **Auto Disponibili**: Visualizzazione delle auto disponibili per il noleggio con opzioni di prenotazione.
+- **Modulo di Contatto**: Form per raccogliere i lead, includendo:
+  - Nome e email
+  - Durata del noleggio (24, 36, 40, 60 mesi)
+  - Kilometri mensili desiderati
+  - Anticipo facoltativo
+  - Richieste particolari facoltative
+- **Contatti diretti**: Dettagli per contattare l'azienda via telefono o email.
 
-## Tecnologie
-Questo sito è costruito con le seguenti tecnologie:
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **GitHub Pages** per l'hosting gratuito del sito.
+## Tecnologie utilizzate
 
-## Licenza
-Questo progetto è rilasciato sotto la **MIT License**. Vedi il file LICENSE per ulteriori dettagli.
+- **HTML5**: Per la struttura del sito.
+- **CSS3**: Per lo stile e il layout del sito.
+- **JavaScript**: Per la gestione interattiva del modulo di contatto.
+- **Font Awesome**: Per l'uso delle icone nel sito.
+- **Google Fonts**: Per un font moderno e leggibile.
 
-## Contatti
-Per qualsiasi domanda o richiesta, puoi contattarci:
-- **Telefono**: +39 351 3608968
-- **Email**: info@onroadrentals.it
-- **WhatsApp**: clicca sul nostro numero per avviare la conversazione
+## Istruzioni per l'uso
 
-### Link utili
-- **Sito web**: [www.onroadrentals.it](https://www.onroadrentals.it)
+### 1. Clonazione del Repository
 
-Grazie per aver scelto OnRoadRentals, il tuo partner di fiducia per il noleggio auto a lungo termine!
+Per clonare il repository, esegui il seguente comando:
+
+```bash
+git clone https://github.com/tuo-username/onroadrentals.git
