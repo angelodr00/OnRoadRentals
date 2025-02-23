@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noleggio Auto Professionale</title>
+    <title>Noleggio Auto | OnRoad Rentals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Header con logo e navigazione -->
     <header>
-        <div class="logo">Noleggio Auto</div>
+        <div class="logo">
+            <img src="logo.png" alt="OnRoad Rentals Logo" />
+            <h1>OnRoad Rentals</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -19,13 +25,17 @@
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Benvenuto nel nostro Servizio di Noleggio Auto</h1>
-        <p>Offriamo una vasta gamma di auto per ogni esigenza!</p>
-        <a href="#contact" class="cta-button">Richiedi Info</a>
+    <!-- Sezione Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Affitta la tua auto in tutta semplicità!</h2>
+            <p>Scopri le nostre offerte di noleggio auto con soluzioni personalizzate per ogni esigenza.</p>
+            <a href="#contact" class="cta-button">Richiedi informazioni</a>
+        </div>
     </section>
 
-    <section id="cars">
+    <!-- Sezione Auto Disponibili -->
+    <section id="cars" class="cars-section">
         <h2>Le nostre Auto</h2>
         <div class="car-list">
             <div class="car-item">
@@ -44,20 +54,53 @@
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Sezione Contatti -->
+    <section id="contact" class="contact-section">
         <h2>Contattaci</h2>
-        <p>Compila il modulo qui sotto per ricevere informazioni o prenotare un'auto.</p>
+        <p>Compila il modulo per maggiori informazioni o per prenotare un'auto.</p>
+
         <form id="lead-form">
             <input type="text" name="name" placeholder="Nome" required>
             <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Telefono" required>
             <input type="text" name="car" placeholder="Auto di interesse" required>
-            <textarea name="message" placeholder="Messaggio" required></textarea>
-            <button type="submit">Invia</button>
+
+            <div class="field-group">
+                <label for="rental-duration">Durata del noleggio:</label>
+                <select name="rental-duration" id="rental-duration" required>
+                    <option value="24">24 mesi</option>
+                    <option value="36">36 mesi</option>
+                    <option value="40">40 mesi</option>
+                    <option value="60">60 mesi</option>
+                </select>
+            </div>
+
+            <div class="field-group">
+                <label for="monthly-km">Kilometri mensili:</label>
+                <input type="number" name="monthly-km" id="monthly-km" placeholder="Inserisci i chilometri mensili" required>
+            </div>
+
+            <div class="field-group">
+                <label for="down-payment">Anticipo (facoltativo):</label>
+                <input type="number" name="down-payment" id="down-payment" placeholder="Anticipo desiderato">
+            </div>
+
+            <div class="field-group">
+                <label for="special-requests">Richieste particolari (facoltativo):</label>
+                <textarea name="special-requests" id="special-requests" placeholder="Scrivi eventuali richieste particolari"></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">Invia</button>
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Noleggio Auto. Tutti i diritti riservati.</p>
+        <div class="contact-info">
+            <p>Telefono: <a href="tel:+393513608968">+39 3513608968</a></p>
+            <p>Email: <a href="mailto:info@onroadrentals.it">info@onroadrentals.it</a></p>
+        </div>
+        <p>&copy; 2025 OnRoad Rentals. Tutti i diritti riservati.</p>
     </footer>
 </body>
 </html>
