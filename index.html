@@ -3,60 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnRoadsRentals - Noleggio Auto</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Noleggio Auto Professionale</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Header con logo -->
     <header>
-        <img src="logo.png" alt="OnRoadsRentals Logo" class="logo">
-        <h1>Noleggio Auto su Misura per Te</h1>
+        <div class="logo">Noleggio Auto</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Auto Disponibili</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Sezione Lista Auto -->
-    <section class="car-list">
-        <h2>Le Nostre Auto</h2>
-        <div class="cars">
-            <div class="car">
-                <img src="auto1.jpg" alt="Auto 1">
-                <p>Mercedes Classe A</p>
+    <section id="home">
+        <h1>Benvenuto nel nostro Servizio di Noleggio Auto</h1>
+        <p>Offriamo una vasta gamma di auto per ogni esigenza!</p>
+        <a href="#contact" class="cta-button">Richiedi Info</a>
+    </section>
+
+    <section id="cars">
+        <h2>Le nostre Auto</h2>
+        <div class="car-list">
+            <div class="car-item">
+                <img src="car1.jpg" alt="Auto 1">
+                <h3>Modello A</h3>
+                <p>Descrizione auto 1...</p>
+                <a href="#contact" class="cta-button">Prenota ora</a>
             </div>
-            <div class="car">
-                <img src="auto2.jpg" alt="Auto 2">
-                <p>BMW Serie 3</p>
+            <div class="car-item">
+                <img src="car2.jpg" alt="Auto 2">
+                <h3>Modello B</h3>
+                <p>Descrizione auto 2...</p>
+                <a href="#contact" class="cta-button">Prenota ora</a>
             </div>
-            <div class="car">
-                <img src="auto3.jpg" alt="Auto 3">
-                <p>Audi Q5</p>
-            </div>
+            <!-- Aggiungi altre auto -->
         </div>
     </section>
 
-    <!-- Form di Contatto -->
-    <section class="contact-form">
-        <h2>Richiedi un Preventivo</h2>
-        <form action="submit_form.php" method="POST">
-            <input type="text" name="nome" placeholder="Nome" required>
+    <section id="contact">
+        <h2>Contattaci</h2>
+        <p>Compila il modulo qui sotto per ricevere informazioni o prenotare un'auto.</p>
+        <form id="lead-form">
+            <input type="text" name="name" placeholder="Nome" required>
             <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="telefono" placeholder="Telefono" required>
-            <select name="auto">
-                <option value="" disabled selected>Seleziona un'auto</option>
-                <option value="mercedes">Mercedes Classe A</option>
-                <option value="bmw">BMW Serie 3</option>
-                <option value="audi">Audi Q5</option>
-            </select>
-            <input type="text" name="durata" placeholder="Durata del noleggio (es. 12 mesi)" required>
-            <textarea name="messaggio" placeholder="Richieste specifiche"></textarea>
-            <button type="submit">Invia Richiesta</button>
+            <input type="text" name="car" placeholder="Auto di interesse" required>
+            <textarea name="message" placeholder="Messaggio" required></textarea>
+            <button type="submit">Invia</button>
         </form>
     </section>
 
-    <!-- Pulsanti di Contatto -->
-    <section class="contact-buttons">
-        <a href="https://wa.me/tuonumero" class="whatsapp-btn">Contattaci su WhatsApp</a>
-        <a href="mailto:tuamail@email.com" class="email-btn">Contattaci via Email</a>
-    </section>
-
+    <footer>
+        <p>&copy; 2025 Noleggio Auto. Tutti i diritti riservati.</p>
+    </footer>
 </body>
 </html>
